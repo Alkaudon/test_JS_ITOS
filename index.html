@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- ejercicio 1 -->
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="test.js"></script>
+        <link rel="stylesheet" href="test.css">
+        <meta charset="UTF-8">  
+    </head>
+    <body>
+        <div class="sty02">
+            <table class="sty01">
+                <thead>
+                    <tr>
+                      <th class="sty03">Ejercicio</th>
+                      <th class="sty04"></th>
+                    </tr>
+                </thead>                
+                <!-- ejercicio 2 -->
+                <tr>
+                    <td>
+                        <!-- año bisiesto? -->
+                        <div id ="e1">
+                            <p><b>Indicar si el año de entrada es bisiesto</b></p>
+                            Entre el año:
+                            <input type="text" id="year"><br>
+                            <br>
+                            El año <input type="text" id="yearOut" size="2"> es bisiesto<br>
+                        </div>                        
+                    </td>
+                    <td>
+                        <button id="btn1" type="button">Ejecutar</button>
+                    </td>
+                </tr>
+                <!-- ejercicio 3 -->
+                <tr>
+                    <td>
+                        <!-- generacion de table -->
+                        <div id ="e2">
+                            <p><b>Generar una tabla con las columnas y renglones indicados</b></p>
+                            Renglones:
+                            <input type="text" id="tableRow"><br><br>
+                            Columnas:
+                            <input type="text" id="tableCol"><br><br>
+                            <!-- table generado -->
+                            <div id="tableOutput">                        
+                            </div>
+                        </div>            
+                    </td>
+                    <td>
+                        <button id="btn2" type="button">Ejecutar</button>
+                    </td>
+                </tr>
+                <!-- ejercicio 4 -->
+                <tr>
+                    <td>
+                        <!-- ordenacion de arreglo -->
+                        <div id ="e3">
+                            <p><b>Ordenación de arreglo</b></p>
+                            Array generado:<br>
+                            <textarea id="array2sort" cols="50" rows="4"></textarea><br><br>
+                            Array ordenado:<br>
+                            <textarea id="arraySorted" cols="50" rows="4"></textarea>
+                        </div>
+                    </td>
+                    <td>
+                        <button id="btn3" type="button">Ejecutar</button>
+                    </td>
+                </tr>
+                <!-- ejercicio 5 -->
+                <tr>
+                    <td>
+                        <!-- operacion de conjuntos -->
+                        <div id ="e4">
+                            <p><b>Operaciones con conjuntos</b></p>
+                            Conjunto generado A:<br>
+                            <textarea id="set_A" cols="50" rows="4"></textarea><br>
+                            Conjunto generado B:<br>
+                            <textarea id="set_B" cols="50" rows="4"></textarea><br>
+                            <br><br>
+                            Union:<br>
+                            <textarea id="setUnion" cols="50" rows="4"></textarea><br>
+                            Intersección:<br>
+                            <textarea id="setIntersection" cols="50" rows="4"></textarea><br>
+                            Diferencia:<br>                            
+                            <textarea id="setDiferencia" cols="50" rows="4"></textarea><br>
+                            Diferencia Simétrica:<br>
+                            <textarea id="setDifSim" cols="50" rows="4"></textarea><br>                
+                        </div>
+                    </td>
+                    <td>
+                        <button id="btn4" type="button">Ejecutar</button>
+                    </td>
+                </tr>
+                <!-- ejercicio 6 -->
+                <tr>
+                    <td>
+                        <!-- consulta de api -->
+                        <div id ="e5">
+                            <input type="hidden" id="FechaIniApi">
+                            <input type="hidden" id="FechaFinApi">
+                            <p><b>Consulta de SIE API de Banco de méxico</b></p>
+                            Token:
+                            <input type="text" id="tokenApi" size="75"><br>
+                            <br>
+                            Indicador:
+                            <input type="text" id="indicadorApi" value="SF343410"><br>
+                            <br>
+                            <br>
+                            <div id="tableApiOutput">                                
+                            </div>                            
+                        </div>
+                    </td>
+                    <td>
+                        <button id="btn5" type="button">Ejecutar</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script type="text/javascript">
+            init();
+        </script>
+    </body>
+</html>
+    
